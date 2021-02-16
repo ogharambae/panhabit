@@ -8,6 +8,7 @@
 This browser based web application to ...
 
 Kelly Olsson - profile.html
+Hannah Kuo: index.html
 	
 ## Technologies
 Technologies used for this project:
@@ -44,3 +45,4 @@ Tips for file naming files and folders:
 * use lowercase with no spaces
 * use dashes (not underscore) for word separation
 
+HyunBae Choi
