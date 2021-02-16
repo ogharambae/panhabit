@@ -6,6 +6,8 @@
 
 ## General Info
 This browser based web application to ...
+
+Kelly Olsson - profile.html
 	
 ## Technologies
 Technologies used for this project:
