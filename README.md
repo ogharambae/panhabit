@@ -6,6 +6,8 @@
 
 ## General Info
 This browser based web application to ...
+
+Hannah Kuo: index.html
 	
 ## Technologies
 Technologies used for this project:
