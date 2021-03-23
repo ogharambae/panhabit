@@ -6,3 +6,10 @@ body{
 .navbar-custom { 
     background-color: lightgreen; 
 } 
+
+.profile-page{
+    text-align: center;
+}
+.dog-gif {
+    width: 30%;
+}
