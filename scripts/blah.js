@@ -15,28 +15,29 @@ function sayHello() {
 }
 sayHello();
 
-function getHabit(){
-    document.getElementById("submit").addEventListener('click', function () {
-        var location = document.getElementById("habit").value;
-        console.log(location);
-    })
-}
-getHabit();
+// function getHabit(){
+//     document.getElementById("submit").addEventListener('click', function () {
+//         var location = document.getElementById("habit").value;
+//         console.log(location);
+//     })
+// }
+// getHabit();
 
 function getHabit() {
     document.getElementById("submit").addEventListener('click', function () {
-        var location = document.getElementById("habit").value;
-        console.log(location);
-
+        var habit = document.getElementById("habit123").value;
+        console.log(habit);
+        var note = document.getElementById("habit-note").value;
+        console.log(note);
 				//read cities collection from firestore, with query
-        db.collection("habits")
-            .where("name", "==", location)
-            .get()
-            .then(function (snap) {
-                snap.forEach(function(doc) {
-                    console.log(doc.data());
-                    //do something with the data
-                })
+        db.collection("users")
+            // .doc(user.uid)
+            .doc("12345")
+            .collection("habits")
+            .add({
+                "habit": habit,
+                "note": note
+
             })
     })
 }
