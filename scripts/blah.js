@@ -26,7 +26,6 @@ function getHabit() {
                         //read cities collection from firestore, with query
                 db.collection("users")
                     .doc(somebody.uid)
-                    // .doc("12345")
                     .collection("habits")
                     .add({
                         "habit": habit,
