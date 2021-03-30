@@ -42,7 +42,7 @@
                         <a class="nav-link" href="profile.html">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Habits</a>
+                        <a class="nav-link" href="habit_calender.html">Habits</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="habit_add.html">Create Habits</a>
@@ -135,8 +135,8 @@
             </label>
           </div>
         <br>
-        <button type="button" id="submit" class="btn btn-outline-success">Finish</button>
-        <button type="button" class="btn btn-outline-danger">Back</button>
+        <input type="submit" value="Submit" id="submit" class="btn btn-outline-success" onclick="location.href='habit_calender.html'"></input>
+        <input type="button" value="Reset" class="btn btn-outline-danger" onclick="resetForm()"></input>
     </form>
 
     <!----------------------------------------------->
@@ -153,11 +153,11 @@
 
     <!-- Link to the api keys for your firebase project -->
     <script src="scripts/firebase_api_grp7.js"></script>
+    <script src="scripts/habit_add.js"></script>
 
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
-    <script src="scripts/blah.js"></script>
 
 </body>
 
