@@ -15,6 +15,7 @@ function sayHello() {
 }
 sayHello();
 
+
 function getHabit() {
     document.getElementById("submit").addEventListener('click', function () {
         firebase.auth().onAuthStateChanged(function (somebody) {
@@ -23,7 +24,6 @@ function getHabit() {
                 console.log(habit);
                 var note = document.getElementById("habit-note").value;
                 console.log(note);
-                        //read cities collection from firestore, with query
                 db.collection("users")
                     .doc(somebody.uid)
                     .collection("habits")
@@ -33,10 +33,10 @@ function getHabit() {
                     })
             }
         })
-                    
     })
 }
 getHabit();
+
 
 function getFormInputs() {
     document.getElementById("submit").addEventListener('click', function () {
