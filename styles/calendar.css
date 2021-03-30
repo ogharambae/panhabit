@@ -1,17 +1,7 @@
-table {
-  font-size: 200%;
-  text-align: center;
+body{
+  background-image: linear-gradient(to right, #25085E, #3215C1);
+  color: whitesmoke;
 }
-
-.long {
-  margin: 0;
-  padding: 10px 0;
-  background-color: #ddd;
-  border-color: #ddd;
-}
-
-
-
 
 * {box-sizing: border-box;}
 ul {list-style-type: none;}
@@ -20,7 +10,7 @@ body {font-family: Verdana, sans-serif;}
 .month {
   padding: 70px 25px;
   width: 100%;
-  background: #1abc9c;
+  background: #db0085;
   text-align: center;
 }
 
@@ -57,6 +47,7 @@ body {font-family: Verdana, sans-serif;}
   width: 13.6%;
   color: #666;
   text-align: center;
+  font-size: larger;
 }
 
 .days {
@@ -73,6 +64,7 @@ body {font-family: Verdana, sans-serif;}
   margin-bottom: 5px;
   font-size:12px;
   color: #777;
+  font-size: large;
 }
 
 .days li .active {
