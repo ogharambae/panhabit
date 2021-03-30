@@ -1,15 +1,15 @@
 body{
-    background-image: linear-gradient(to right, #25085E, #3215C1);
+    background-image: linear-gradient(to right, #d71b79, #420b5c);
     color: whitesmoke;
 }
-
-.navbar-custom { 
-    background-color: lightgreen; 
-} 
 
 .profile-page{
     text-align: center;
 }
 .dog-gif {
     width: 30%;
+}
+
+.navbar-custom {
+    background-color: lightgreen;
 }
