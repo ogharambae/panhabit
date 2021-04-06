@@ -14,6 +14,7 @@
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
 
     <!-- Optional styles and scripts of your own -->
+    <link rel="stylesheet" href="styles\my_bootstrap.css">
     <link rel="stylesheet" href="styles/my_style.css">
 </head>
 
@@ -47,9 +48,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="habit_add.html">Create Habits</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -67,76 +65,87 @@
             <input id="habit-note" class="form-control" type="text" placeholder="Write a note...">
         </div>
         <br>
+        <div class="form-group">
         <label for="exampleFormControlSelect1">Please choose which days you will be performing your habit (optional)</label>
+        </div>
         <br>
         <br>
-        <div class="form-check">
+        <div class="form-group">
             <input class="form-check-input" type="checkbox" value="" id="sun">
             <label class="form-check-label" for="defaultCheck1">
                 Sunday
             </label>
         </div>
-        <div class="form-check">
+        <div class="form-group">
             <input class="form-check-input" type="checkbox" value="" id="mon">
             <label class="form-check-label" for="defaultCheck1">
                 Monday
             </label>
         </div>
-        <div class="form-check">
+        <div class="form-group">
             <input class="form-check-input" type="checkbox" value="" id="tues">
             <label class="form-check-label" for="defaultCheck1">
                 Tuesday
             </label>
         </div>
-        <div class="form-check">
+        <div class="form-group">
             <input class="form-check-input" type="checkbox" value="" id="wed">
             <label class="form-check-label" for="defaultCheck1">
                 Wednesday
             </label>
         </div>
-        <div class="form-check">
+        <div class="form-group">
             <input class="form-check-input" type="checkbox" value="" id="thurs">
             <label class="form-check-label" for="defaultCheck1">
                 Thursday
             </label>
         </div>
-        <div class="form-check">
+        <div class="form-group">
             <input class="form-check-input" type="checkbox" value="" id="fri">
             <label class="form-check-label" for="defaultCheck1">
                 Friday
             </label>
         </div>
-        <div class="form-check">
+        <div class="form-group">
             <input class="form-check-input" type="checkbox" value="" id="sat">
             <label class="form-check-label" for="defaultCheck1">
                 Saturday
             </label>
         </div>
-        </div>
         <br>
-        <label for="exampleFormControlSelect1">Please choose a time that you would want to do this habit (optional)</label><br><br>
+        <div class="form-group">
+        <label for="exampleFormControlSelect1">Please choose a time that you would want to do this habit (optional)</label>
+        </div>
+        <br><br>
+        <div class="form-group">
         <form>
             <label for="appt">Select a time:</label>
             <input type="time" id="appt" name="appt">
         </form>
+        </div>
         <br>
-        <label for="exampleFormControlSelect1">Would you like to enable notifications?</label><br>
+        <div class="form-group">
+        <label for="exampleFormControlSelect1">Would you like to enable notifications?</label>
+        </div>
         <br>
-        <div class="form-check">
+        <br>
+        <div class="form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
               Yes
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
             <label class="form-check-label" for="exampleRadios2">
               No
             </label>
           </div>
         <br>
+        <div class="form-group">
         <button type="button" id="submit" class="btn btn-outline-success">Submit</button>
         <button type="button" class="btn btn-outline-danger" onclick="resetForm()">Reset</button>
+        </div>
     </form>
 
     <!----------------------------------------------->
