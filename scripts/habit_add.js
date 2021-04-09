@@ -3,11 +3,10 @@ function addSubmitListener() {
         // async, await (maybe)
         var name = document.getElementById("habit-name").value;
         addHabit(name);
-        console.log("working")
-        updateDaysArray();
-        console.log("working2")
+        console.log("working");
+        console.log("working2");
         resetForm();
-        console.log("working3")
+        console.log("working3");
         // location.href = "habit_calendar.html"
     })
 }
@@ -35,7 +34,7 @@ function addHabit(name) {
                 "sun": sun
             })
             .then(function () {
-                updateDaysArray(user.uid, name, mon, tue, wed);
+                updateDaysArray(user.uid, name, mon, tue, wed, thurs, fri, sat, sun);
             })
     })
 }
@@ -45,22 +44,22 @@ function updateDaysArray(uid, name, mon, tue, wed, thurs, fri, sat, sun) {
     if (mon) { //add "monday", key value pair
         obj.monday = firebase.firestore.FieldValue.arrayUnion(name);
     }
-    else if (tue) {
+    if (tue) {
         obj.tuesday = firebase.firestore.FieldValue.arrayUnion(name);
     }
-    else if (wed) {
+    if (wed) {
         obj.wednesday = firebase.firestore.FieldValue.arrayUnion(name);
     }
-    else if (thurs) {
+    if (thurs) {
         obj.thursday = firebase.firestore.FieldValue.arrayUnion(name);
     }
-    else if (fri) {
+    if (fri) {
         obj.friday = firebase.firestore.FieldValue.arrayUnion(name);
     }
-    else if (sat) {
+    if (sat) {
         obj.saturday = firebase.firestore.FieldValue.arrayUnion(name);
     }
-    else if (sun) {
+    if (sun) {
         obj.sunday = firebase.firestore.FieldValue.arrayUnion(name);
     }
     console.log(obj);
