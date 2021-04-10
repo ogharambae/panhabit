@@ -22,3 +22,5 @@ function showAllMyHabitsOnThisDay1(day) {
 showAllMyHabitsOnThisDay1("monday");
 showAllMyHabitsOnThisDay1("tuesday");
 showAllMyHabitsOnThisDay1("wednesday");
+showAllMyHabitsOnThisDay1("thursday");
+showAllMyHabitsOnThisDay1("friday");
