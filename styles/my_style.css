@@ -9,3 +9,16 @@ body{
 .dog-gif {
     width: 30%;
 }
+
+.cat-pet {
+    width: 80%
+}
+
+.cat-pet-habit {
+    float:left; 
+    width:25%;
+}
+
+.cat-pet-calendar {
+    width: 80%;
+}
