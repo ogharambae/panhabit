@@ -8,11 +8,11 @@ div p  {
 }
 
 .container {
-  padding-top: 100px;
   font-size: medium;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .habit-names p {
