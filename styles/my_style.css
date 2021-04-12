@@ -1,3 +1,7 @@
+#main-body {
+    background-image: black;
+}
+
 body{
     background-image: linear-gradient(to right, #420b5c, #ce0bf5);
     color: whitesmoke;
@@ -25,4 +29,62 @@ body{
 
 .cat-pet-habit-view {
     width: 50%;
+}
+
+.logo-background {
+    background-color: black;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+.logo {
+    width: 100%;
+    margin: auto;
+}
+
+.pet-logo {
+    width: 20%;
+    display: block;
+    margin-left: 20%;
+    margin-right: auto;
+    width: 40%;
+}
+
+.speech-bubble {
+    width: 50%;
+    display: block;
+    margin-left: 25%;
+    margin-right: auto;
 }
