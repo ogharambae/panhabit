@@ -27,8 +27,9 @@ function showAllMyHabits() {
                 snap.forEach(function (doc) {
                     var name = doc.data().name;
                     var info = doc.data().info;
+                    var time = doc.data().time;
                     $("#habit-and-info").append("<h3 id='habit-title'> " + name + "</h3>");
-                    $("#habit-and-info").append("<h6> " + info + "</h6>")
+                    $("#habit-and-info").append("<h6> " + info + ' (' + time + ')' + "</h6>")
                 })
             })
     })
