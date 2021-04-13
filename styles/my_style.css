@@ -30,3 +30,38 @@ body{
 #habit-title {
   margin-top: 30px;
 }
+
+.profile-page {
+    padding-top: 5%;
+}
+
+#create-habit-button {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color:#2e007e;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+a {
+    color:#2e007e;
+}
+
+#create-habit-button:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    }
+
+@media all and (max-width:30em){
+    #create-habit-button{
+    display:block;
+    margin:0.4em auto;
+    }
+}
