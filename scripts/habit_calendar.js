@@ -29,7 +29,12 @@ function showAllMyHabits() {
                     var info = doc.data().info;
                     var time = doc.data().time;
                     $("#habit-and-info").append("<h3 id='habit-title'> " + name + "</h3>");
-                    $("#habit-and-info").append("<h6> " + info + ' (' + time + ')' + "</h6>")
+                    if (time) {
+                    $("#habit-and-info").append("<h6> " + info + ' (' + time + ')' + "</h6>");
+                    }
+                    else {
+                    $("#habit-and-info").append("<h6> " + info + "</h6>");
+                    }
                 })
             })
     })
