@@ -1,4 +1,4 @@
-function showAllMyHabitsOnThisDay1(day) {
+function showAllMyHabitsOnThisDay1(day, time) {
     firebase.auth().onAuthStateChanged(function (user) {
         db.collection("users").doc(user.uid)
             .get()
@@ -13,7 +13,9 @@ function showAllMyHabitsOnThisDay1(day) {
 
                 if (habitlist) {   //only display if the list is not empty
                     habitlist.forEach(function (h) {
+
                         $("#" + day + "-habits-go-here").append("<p>" + h + "</p>");
+                        
                     })
                 }
             })
@@ -24,3 +26,5 @@ showAllMyHabitsOnThisDay1("tuesday");
 showAllMyHabitsOnThisDay1("wednesday");
 showAllMyHabitsOnThisDay1("thursday");
 showAllMyHabitsOnThisDay1("friday");
+showAllMyHabitsOnThisDay1("saturday");
+showAllMyHabitsOnThisDay1("sunday");
