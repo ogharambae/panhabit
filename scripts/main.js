@@ -6,7 +6,7 @@ function sayHello() {
                 .doc(somebody.uid)
                 .get()
                 .then(function (doc) {
-                    //console.log(doc.data().name);
+                    console.log(doc.data().name);
                     var n = doc.data().name;
                     $("#name-goes-here").text(n);
                 })
