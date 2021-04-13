@@ -4,11 +4,10 @@ body{
 }
 
 div p  {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .container {
-  font-size: medium;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   text-transform: uppercase;
@@ -16,15 +15,14 @@ div p  {
 }
 
 .habit-names p {
-  font-size: px;
   text-align: center;
 }
 
 .col-sm h1 {
-  font-size: 50px;
+  font-size: 30px;
   background-color: #2e007e;
 }
 
-.habit-names {
-  padding-top: 0px;
+.cat-pet-calendar {
+  padding-top: 5%;
 }
