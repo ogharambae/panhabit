@@ -3,14 +3,18 @@ function addSubmitListener() {
         // async, await (maybe)
         var name = document.getElementById("habit-name").value;
         addHabit(name);
-        console.log("working");
-        console.log("working2");
         resetForm();
-        console.log("working3");
-        // location.href = "habit_calendar.html"
+        // location.href = "habit_calendar.html";
     })
 }
 addSubmitListener();
+
+function resetBtn() {
+    document.getElementById("reset").addEventListener("click", function () {
+        resetForm();
+    })
+}
+resetBtn();
 
 function addHabit(name) {
     var mon = document.getElementById("mon").checked;
