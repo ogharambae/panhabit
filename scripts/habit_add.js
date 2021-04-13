@@ -20,11 +20,14 @@ function addHabit(name) {
     var fri = document.getElementById("fri").checked;
     var sat = document.getElementById("sat").checked;
     var sun = document.getElementById("sun").checked;
+    var note = document.getElementById("habit-note").value;
     firebase.auth().onAuthStateChanged(function (user) {
         db.collection("users").doc(user.uid)
             .collection("habits")
             .add({
+                "timestamp": firebase.firestore.FieldValue.serverTimestamp(),
                 "name": name,
+                "info": note,
                 "mon": mon,
                 "tue": tue,
                 "wed": wed,
