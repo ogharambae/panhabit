@@ -5,10 +5,13 @@
 * [Contents](#content)
 
 ## General Info
-This browser based web application to ...
 
-Kelly Olsson - profile.html
-Hannah Kuo: index.html
+Panhabit is a habit creation and maintenance application that addresses creating and maintaining habits during a pandemic. The app uses a virtual pet to keep the process relaxing and fun and reduce the stress of habit maintenance and promote motivation.
+
+Developers:
+Kelly Olsson 
+HyunBae Choi
+Hannah Kuo
 	
 ## Technologies
 Technologies used for this project:
@@ -45,4 +48,3 @@ Tips for file naming files and folders:
 * use lowercase with no spaces
 * use dashes (not underscore) for word separation
 
-HyunBae Choi
