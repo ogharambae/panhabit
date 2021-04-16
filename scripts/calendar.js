@@ -1,3 +1,4 @@
+// Read data from Firestore and display habits in caledar view.
 function showAllMyHabitsOnThisDay1(day) {
     firebase.auth().onAuthStateChanged(function (user) {
         db.collection("users").doc(user.uid)
