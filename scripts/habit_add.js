@@ -76,8 +76,8 @@ function updateDaysArray(uid, name, mon, tue, wed, thurs, fri, sat, sun) {
         .set(obj, {
             merge: true
         })
-        .then(function() {
-            window.location.href="calendar.html";
+        .then(function () {
+            window.location.href = "calendar.html";
         })
 }
 
