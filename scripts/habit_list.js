@@ -1,11 +1,12 @@
+// Read user info from firebase and greet user based on user's name.
 function sayHello() {
     firebase.auth().onAuthStateChanged(function (somebody) {
         if (somebody) {
-            db.collection("users")
-                .doc(somebody.uid)
-                .get()
+            db.collection("users") 
+                .doc(somebody.uid) 
+                .get() 
                 .then(function (doc) {
-                    var n = doc.data().name;
+                    var n = doc.data().name; 
                     $("#name-goes-here").text(n);
                 })
         }
@@ -13,6 +14,9 @@ function sayHello() {
 }
 sayHello();
 
+// Read logged habits from firesbase and display them on the habit_list.html page.
+// Grabs name, info, and time of the habit.
+// If time is not logged, it does not display anything.
 function showAllMyHabits() {
     firebase.auth().onAuthStateChanged(function (user) {
         db.collection("users").doc(user.uid)
