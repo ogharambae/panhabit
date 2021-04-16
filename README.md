@@ -1,24 +1,32 @@
-## My Web Application (Title)
+## My Web Application (PanHabit)
 
+* [Developers](#developers)
 * [General info](#general-info)
 * [Technologies](#technologies)
+* [Sources](#sources)
 * [Contents](#content)
+
+## Developers
+Kelly Olsson: Project Manager
+<br>
+HyunBae Choi: Designer
+<br>
+Hannah Kuo: Programmer
 
 ## General Info
 
 Panhabit is a habit creation and maintenance application that addresses creating and maintaining habits during a pandemic. The app uses a virtual pet to keep the process relaxing and fun and reduce the stress of habit maintenance and promote motivation.
-
-Developers:
-Kelly Olsson 
-HyunBae Choi
-Hannah Kuo
 	
 ## Technologies
 Technologies used for this project:
 * HTML, CSS
 * JavaScript
 * Bootstrap 
-* ...
+* Firebase
+
+## Sources
+* https://pixelspeechbubble.com/
+* https://textcraft.net/
 	
 ## Content
 Content of the project folder:
@@ -26,25 +34,47 @@ Content of the project folder:
 ```
  Top level of project folder: 
 ├── .gitignore               # Git ignore file
-├── index.html               # landing HTML file, this is what users see when you come to url
-└── README.md
+├── index.html               # landing page
+├── habit_add.html           # habit add page
+├── habit_list.html          # view habits page
+├── login.html               # login page
+├── profile.html             # view profile page
+├── calendar.html            # view calendar page
+├── firebase.json            # firebase json file
+├── firestore.rules          # firestore rule file
+├── 1800-project.code-workspace             
 
 It has the following subfolders and files:
-├── .git                     # Folder for git repo
+├── .vscode                  # Folder vscode json file
+    /settings.json
 ├── images                   # Folder for images
-    /blah.jpg                # 
+    /cat-pet-head.png
+    /pet-logo-speech-bubble.gif
+    /pixel-pet-calendar.png
+    /pixel-pet-habit-create.png
+    /pixel-pet-ok.png
+    /pixel-pet-welcome.png 
 ├── scripts                  # Folder for scripts
-    /blah.js                 # 
+    /calendar.js
+    /firebase_api_grp7.js
+    /habit_add.js
+    /habit_list.js
+    /index.js
+    /login.js                  
 ├── styles                   # Folder for styles
-    /blah.css                # 
+    /calendar.css
+    /index.css
+    /my_bootstrap.css
+    /my_style.css                
 
 Firebase hosting files: 
-├── .firebaserc...
-
+├── .firebase                # Folder for firebase cache
+    /hosting..cache
 
 ```
 
 Tips for file naming files and folders:
 * use lowercase with no spaces
-* use dashes (not underscore) for word separation
+* use underscore for word separation
+* use dashes for word separation when looking for images
 
