@@ -1,20 +1,19 @@
 function addSubmitListener() {
     document.getElementById("submit").addEventListener("click", function () {
-        // async, await (maybe)
         var name = document.getElementById("habit-name").value;
         addHabit(name);
         resetForm();
-        // location.href = "habit_calendar.html";
+        // redirectPage();
     })
 }
 addSubmitListener();
 
-function resetBtn() {
+function resetForm() {
     document.getElementById("reset").addEventListener("click", function () {
         resetForm();
     })
 }
-resetBtn();
+resetForm();
 
 function addHabit(name) {
     var mon = document.getElementById("mon").checked;
@@ -50,7 +49,7 @@ function addHabit(name) {
 
 function updateDaysArray(uid, name, mon, tue, wed, thurs, fri, sat, sun) {
     var obj = {};
-    if (mon) { //add "monday", key value pair
+    if (mon) {
         obj.monday = firebase.firestore.FieldValue.arrayUnion(name);
     }
     if (tue) {
@@ -81,40 +80,3 @@ function updateDaysArray(uid, name, mon, tue, wed, thurs, fri, sat, sun) {
 function resetForm() {
     document.getElementById("habit").reset();
 }
-
-// function getHabit() {
-//     document.getElementById("submit").addEventListener('click', function () {
-//         firebase.auth().onAuthStateChanged(function (somebody) {
-//             if (somebody) {
-//                 var habit = document.getElementById("habit-name").value;
-//                 console.log(habit);
-//                 var note = document.getElementById("habit-note").value;
-//                 console.log(note);
-//                 db.collection("users")
-//                     .doc(somebody.uid)
-//                     .collection("habits")
-//                     .add({
-//                         "habit": habit,
-//                         "note": note
-//                     })
-//             }
-//         })
-//     })
-// }
-// getHabit();
-
-// function habitEntryDays(){
-//     var dbRef = db.collection("users").doc(user.uid);
-
-//     firebase.auth().onAuthStateChanged(function(user){
-//         var name = document.getElementById("habit-name").value;
-// 		var mon = document.getElementById("mon").checked;
-
-//         if (mon){
-//             dbRef.set({
-//                 monday: firebase.firestore.FieldValue.arrayUnion(name)},
-//                 {merge: true});
-//         }
-//     })
-// }
-// habitEntryDays();
