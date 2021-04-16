@@ -3,7 +3,6 @@ function addSubmitListener() {
         var name = document.getElementById("habit-name").value;
         addHabit(name);
         resetForm();
-        // redirectPage();
     })
 }
 addSubmitListener();
@@ -43,7 +42,6 @@ function addHabit(name) {
             })
             .then(function () {
                 updateDaysArray(user.uid, name, mon, tue, wed, thurs, fri, sat, sun);
-                // redirectPage()
             })
     })
 }
@@ -71,7 +69,6 @@ function updateDaysArray(uid, name, mon, tue, wed, thurs, fri, sat, sun) {
     if (sun) {
         obj.sunday = firebase.firestore.FieldValue.arrayUnion(name);
     }
-    console.log(obj);
     db.collection("users").doc(uid)
         .set(obj, {
             merge: true
