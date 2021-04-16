@@ -43,6 +43,7 @@ function addHabit(name) {
             })
             .then(function () {
                 updateDaysArray(user.uid, name, mon, tue, wed, thurs, fri, sat, sun);
+                // redirectPage()
             })
     })
 }
@@ -74,6 +75,9 @@ function updateDaysArray(uid, name, mon, tue, wed, thurs, fri, sat, sun) {
     db.collection("users").doc(uid)
         .set(obj, {
             merge: true
+        })
+        .then(function() {
+            window.location.href="calendar.html";
         })
 }
 
