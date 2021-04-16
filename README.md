@@ -7,11 +7,11 @@
 * [Contents](#content)
 
 ## Developers
-Kelly Olsson: Project Manager
+Project Manager: Hannah Kuo
 <br>
-HyunBae Choi: Designer
+Designer: HyunBae Choi
 <br>
-Hannah Kuo: Programmer
+Programmer: Kelly Olsson
 
 ## General Info
 
