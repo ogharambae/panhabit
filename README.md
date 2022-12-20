@@ -1,17 +1,9 @@
 ## My Web Application (PanHabit)
 
-* [Developers](#developers)
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Sources](#sources)
 * [Contents](#content)
-
-## Developers
-Project Manager: Hannah Kuo
-<br>
-Designer: HyunBae Choi
-<br>
-Programmer: Kelly Olsson
 
 ## General Info
 
